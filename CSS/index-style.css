@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+.container{
+background-image: url(../Assets/Images/background-crear-cuenta.png);
+background-size: cover; 
+background-repeat: no-repeat;
+}
+
+
+.container__logo{
+    position: absolute; 
+    left: 2rem;
+    top: 1rem;
+}
+
+.login-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    list-style: none;
+    }
+.login-box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: white;
+    text-align: center;
+
+}    
+.login-box .user-box input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+
+}   
+
+
+.login-box .user-box label {
+    position: relative;
+    left: 0;
+    top: -3.5rem;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+    
+    
+}
+
+.user-box li {
+    list-style: none;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -5rem;
+    color: #ff00ee;
+    font-size: 12px;
+    transform: translateY(-150%);
+    font-size: 15px;
+}
+
+.button-form{
+    background-color: rgba(149, 0, 159, 0.3);
+    text-align: center;
+    padding: 0.8rem 6rem;
+    color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;;
+
+}
+.container-buttons{
+    height: 7rem;
+
+}
+.button-form a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-form:hover{
+    background-color: rgba(149, 0, 159, 0.5);
+}
+
+#Registrate{
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 85%;
+    left: 30%;
+}
+
+#Registrate a {
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#Registrate a:hover {
+    color: rgba(165, 165, 165, 0.5);
+}
