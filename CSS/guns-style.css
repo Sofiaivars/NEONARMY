@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+
+
+
+.container-carousel{
+    
+    position: relative;
+    top: 10%;
+    left: 30%;
+    height: 60%;
+    width: 40%;
+}
+
+.card{
+    position: relative;
+    width: 400px;
+    height: 400px;  
+    color: rgb(180, 10, 155);
+    background: url('../assets/images/black-mambus.png')
+    center no-repeat;
+    background-size: cover;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.card__content{
+    position: absolute;
+    left: 0;
+    top: 6rem;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    transform: translateY(70px);    
+    transition: transform 0.25s;
+}
