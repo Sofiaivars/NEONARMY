@@ -22,6 +22,7 @@
 .guns-items-btn__item{
     cursor: pointer;
     filter: grayscale(100%);
+    max-width: 300px;
 }
 .guns-items-btn__item:hover{
     filter: grayscale(0%);
@@ -38,7 +39,11 @@
     color: #00000066;
 }
 
-
+@media(max-width:500px){
+    .glass__guns-text{
+        font-size: 15vh;
+    }
+}
 
 
 
