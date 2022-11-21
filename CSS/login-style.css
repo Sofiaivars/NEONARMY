@@ -11,19 +11,16 @@
 background-image: url(../Assets/Images/background-login.png);
 background-size: cover; 
 background-repeat: no-repeat;
-}
-
-.container__logo{
-    position: absolute; 
-    left: 2rem;
-    top: 1rem;
+display: flex;
+background-attachment: fixed;
+background-position: center;
 }
 
 .login-box{
     position: absolute;
     top: 50%;
-    left: 25%;
-    width: 450px;
+    left: 50%;
+    width: 50%;
     padding: 40px;
     transform: translate(-50%, -50%);
     background: transparent;
@@ -79,7 +76,7 @@ background-repeat: no-repeat;
 .button-form{
     background-color: rgba(149, 0, 159, 0.2);
     text-align: center;
-    padding: 0.8rem 6rem;
+    padding: 0.8rem 0rem;
     color: white;
     border-radius: 0.5rem;
     cursor: pointer;;
@@ -87,7 +84,8 @@ background-repeat: no-repeat;
 }
 .container-buttons{
     height: 7rem;
-
+    display: flex;
+    flex-direction: column;
 }
 .button-form a {
     color: #fff;
@@ -101,9 +99,6 @@ background-repeat: no-repeat;
 #Registrate{
     color: white;
     font-size: 12px;
-    position: absolute;
-    top: 85%;
-    left: 30%;
 }
 
 #Registrate a {
