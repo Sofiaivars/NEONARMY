@@ -1,0 +1,12 @@
+@import 'var-style';
+
+@mixin glass-mixin($mt, $min-h, $w) {
+
+    background: map-get($map: $global-color, $key:color-background-glass );
+    border-radius: 10px;
+    margin-top: $mt;
+    min-height: $min-h;
+    overflow: hidden;
+    position: relative;
+    width: $w;
+}

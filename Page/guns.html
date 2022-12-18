@@ -1,274 +1,276 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/global-style.css">
-    <link rel="stylesheet" href="../CSS/guns-style.css">
-    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="../CSS/bootstrap.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Servicio de E-commerce destinado a la compra y venta de armas y equipamiento para juegos del metaverso">
+  <meta name="keywords" content="Metaverse, metaverso, NEONARMY, army, armas, guns, skins, Personajes">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="../CSS/bootstrap.css">
 
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>NEONARMY</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="../Assets/Images/FAVICON_2.ico" crossorigin>  
+  <title>NEONARMY - Armas</title>
 </head>
 
 <body class="container-global">
-    <div class="container-global__header">
-      <a href="http://127.0.0.1:5500/Page/home.html">
-        <img class="container-global__header__logo" src="../Assets/Images/iconlogo.png" width="300">
+  <div class="container-global__header">
+    <a href="home.html">
+      <img class="container-global__header__logo" src="../Assets/Images/iconlogo.png" width="300">
     </a>
-        <nav class="container-global__header__nav">
-            <ul>
-                <div class="button-shopping-cart">
-                    <a href="" class="fa fa-shopping-cart"></a>
-                </div>
+    <nav class="container-global__header__nav">
+      <ul>
+        <div class="button-shopping-cart">
+          <a href="404notfound.html" class="fa fa-shopping-cart"></a>
+        </div>
 
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">SHOP</a></li>
-                <li><a href="http://127.0.0.1:5500/Page/login.html">CUENTA</a></li>
-                <li><a href="#">CONTACTO</a></li>
-            </ul>
-        </nav>
-        <div class="container-global__header__filter">
-            <form class="filter__buscador__form">
-                <input class="form__input" type="text" name="" placeholder="Buscar..">
-                <input type="submit" name="" value="Buscar">
-            </form>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="404notfound.html">SHOP</a></li>
+        <li><a href="login.html">CUENTA</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+    <div class="container-global__header__filter">
+      <form class="filter__buscador__form">
+        <input class="form__input" type="text" name="" placeholder="Buscar..">
+        <input type="submit" name="" value="Buscar">
+      </form>
 
 
-            <div class="header__filter__section">
-              <a class="section__button" href="http://127.0.0.1:5500/Page/guns.html">
-                  Armas
-              </a>
-              <a href="#" class="section__button">Explosivos</a>
-              <a href="#" class="section__button">Accesorios</a>
-              <a href="http://127.0.0.1:5500/Page/skins.html" class="section__button">Skins</a>
+      <div class="header__filter__section">
+        <a class="section__button" href="guns.html">
+          Armas
+        </a>
+        <a href="404notfound.html" class="section__button">Explosivos</a>
+        <a href="404notfound.html" class="section__button">Accesorios</a>
+        <a href="skins.html" class="section__button">Skins</a>
+      </div>
+    </div>
+
+  </div>
+  <div class="container-global__body">
+    <div class="container-global__body__box">
+      <div class="glass-guns">
+        <span class="glass__guns-text">Armas</span>
+        <div class="row">
+          <button type="button" class="guns-items-btn col-sm-3" id="liveToastBtn1">
+            <img class="guns-items-btn__item col-sm-12" src="../Assets/Images/guns/1.png" alt="Fusil M87">
+          </button>
+          <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-body">
+                Se agrego al carrito
+              </div>
+            </div>
+          </div>
+          <button type="button" class="guns-items-btn col-sm-3" id="liveToastBtn2">
+            <img class="guns-items-btn__item col-sm-12" src="../Assets/Images/guns/2.png" alt="Pain Dark 72">
+          </button>
+          <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-body">
+                Se agrego al carrito
+              </div>
+            </div>
+          </div>
+          <button type="button" class="guns-items-btn col-sm-3" id="liveToastBtn3">
+            <img class="guns-items-btn__item col-sm-12" src="../Assets/Images/guns/3.png" alt="K77 Special Blue">
+          </button>
+          <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-body">
+                Se agrego al carrito
+              </div>
+            </div>
+          </div>
+          <button type="button" class="guns-items-btn col-sm-3" id="liveToastBtn4">
+            <img class="guns-items-btn__item col-sm-12" src="../Assets/Images/guns/4.png" alt="Happy Pocket HP 27L // G14">
+          </button>
+          <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-body">
+                Se agrego al carrito
+              </div>
+            </div>
+          </div>
+          <button type="button" class="guns-items-btn col-sm-3" id="liveToastBtn5">
+            <img class="guns-items-btn__item col-sm-12" src="../Assets/Images/guns/5.png" alt="Subfusil AK 7006K // M26">
+          </button>
+          <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-body">
+                Se agrego al carrito
+              </div>
+            </div>
+          </div>
+          <button type="button" class="guns-items-btn col-sm-3" id="liveToastBtn6">
+            <img class="guns-items-btn__item col-sm-12" src="../Assets/Images/guns/6.png" alt="Electric Sierra K 34">
+          </button>
+          <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-body">
+                Se agrego al carrito
+              </div>
+            </div>
+          </div>
+          <button type="button" class="guns-items-btn col-sm-3" id="liveToastBtn7">
+            <img class="guns-items-btn__item col-sm-12" src="../Assets/Images/guns/7.png" alt="L34 // 22 Corto">
+          </button>
+          <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-body">
+                Se agrego al carrito
+              </div>
+            </div>
+          </div>
+          <button type="button" class="guns-items-btn col-sm-3" id="liveToastBtn8">
+            <img class="guns-items-btn__item col-sm-12" src="../Assets/Images/guns/8.png" alt="Black Mambus Star">
+          </button>
+          <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-body">
+                Se agrego al carrito
+              </div>
+            </div>
+          </div>
+          <button type="button" class="guns-items-btn col-sm-3" id="liveToastBtn9">
+            <img class="guns-items-btn__item col-sm-12" src="../Assets/Images/guns/9.png" alt="Short happy gun Neonblue 34L">
+          </button>
+          <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-body">
+                Se agrego al carrito
+              </div>
+            </div>
           </div>
         </div>
-        
+      </div>
     </div>
-    <div class="container-global__body">
-        <div class="container-global__body__box">
-            <div class="glass" >
-                <span class="glass__guns-text">Armas</span>
-                <div class="row">
-                    <button type="button" class="guns-items-btn col-sm-3" id="liveToastBtn1">
-                        <img class="guns-items-btn__item col-sm-12"  src="../Assets/Images/guns/1.png" alt="">
-                    </button>
-                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-                        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-                          <div class="toast-body">
-                            Se agrego al carrito
-                          </div>
-                        </div>
-                      </div>        
-                      <button type="button" class="guns-items-btn col-sm-3" id="liveToastBtn2">
-                        <img class="guns-items-btn__item col-sm-12"  src="../Assets/Images/guns/2.png" alt="">
-                    </button>
-                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-                        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-                          <div class="toast-body">
-                            Se agrego al carrito
-                          </div>
-                        </div>
-                      </div> 
-                      <button type="button" class="guns-items-btn col-sm-3" id="liveToastBtn3">
-                        <img class="guns-items-btn__item col-sm-12"  src="../Assets/Images/guns/3.png" alt="">
-                    </button>
-                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-                        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-                          <div class="toast-body">
-                            Se agrego al carrito
-                          </div>
-                        </div>
-                      </div> 
-                      <button type="button" class="guns-items-btn col-sm-3" id="liveToastBtn4">
-                        <img class="guns-items-btn__item col-sm-12"  src="../Assets/Images/guns/4.png" alt="">
-                    </button>
-                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-                        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-                          <div class="toast-body">
-                            Se agrego al carrito
-                          </div>
-                        </div>
-                      </div> 
-                      <button type="button" class="guns-items-btn col-sm-3" id="liveToastBtn5">
-                        <img class="guns-items-btn__item col-sm-12"  src="../Assets/Images/guns/5.png" alt="">
-                    </button>
-                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-                        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-                          <div class="toast-body">
-                            Se agrego al carrito
-                          </div>
-                        </div>
-                      </div> 
-                      <button type="button" class="guns-items-btn col-sm-3" id="liveToastBtn6">
-                        <img class="guns-items-btn__item col-sm-12"  src="../Assets/Images/guns/6.png" alt="">
-                    </button>
-                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-                        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-                          <div class="toast-body">
-                            Se agrego al carrito
-                          </div>
-                        </div>
-                      </div> 
-                      <button type="button" class="guns-items-btn col-sm-3" id="liveToastBtn7">
-                        <img class="guns-items-btn__item col-sm-12"  src="../Assets/Images/guns/7.png" alt="">
-                    </button>
-                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-                        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-                          <div class="toast-body">
-                            Se agrego al carrito
-                          </div>
-                        </div>
-                      </div> 
-                      <button type="button" class="guns-items-btn col-sm-3" id="liveToastBtn8">
-                        <img class="guns-items-btn__item col-sm-12"  src="../Assets/Images/guns/8.png" alt="">
-                    </button>
-                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-                        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-                          <div class="toast-body">
-                            Se agrego al carrito
-                          </div>
-                        </div>
-                      </div> 
-                      <button type="button" class="guns-items-btn col-sm-3" id="liveToastBtn9">
-                        <img class="guns-items-btn__item col-sm-12"  src="../Assets/Images/guns/9.png" alt="">
-                    </button>
-                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-                        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-                          <div class="toast-body">
-                            Se agrego al carrito
-                          </div>
-                        </div>
-                      </div> 
-                </div>
-            </div>
-        </div>
-    </div>   
-    <div class="body__buttons">
-        <a href="#" class="fa fa-wechat"></a>
-        <a href="#" class="fa fa-envelope"></a>
-        <a href="#" class="fa fa-share"></a>
-    </div>
-    <footer>
-        
-        <section class="footer__buttons">
-            <a href="#" class="fa fa-twitch"></a>
-            <a href="#" class="fa fa-whatsapp"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-facebook"></a>
-        </section>
-        <span class="footer__text">NEON ARMY Copyright 2022 - All rights reserved</span>
-        
-    </footer>
+  </div>
+  <div class="body__buttons">
+    <a href="https://t.me/+suhYsQUkuGJlODM8" class="fa fa-wechat"></a>
+    <a href="mailto:neonarmyproject@gmail.com" class="fa fa-envelope"></a>
+    <a href="404notfound.html" class="fa fa-share"></a>
+  </div>
+  <footer>
+
+    <section class="footer__buttons">
+      <a href="https://www.twitch.tv/neonarmyproject" class="fa fa-twitch"></a>
+      <a href="https://wa.me/34673363015" class="fa fa-whatsapp"></a>
+      <a href="https://twitter.com/NeonArmy8" class="fa fa-twitter"></a>
+      <a href="https://www.facebook.com/profile.php?id=100088584940360" class="fa fa-facebook"></a>
+    </section>
+    <span class="footer__text">NEON ARMY Copyright 2022 - All rights reserved</span>
+
+  </footer>
 </body>
 <script src="../JS/bootstrap.bundle.min.js"></script>
 <script>
-    var toastTrigger = document.getElementById('liveToastBtn1')
-    var toastLiveExample = document.getElementById('liveToast')
-    if (toastTrigger) {
-        toastTrigger.addEventListener('click', function () {
-        var toast = new bootstrap.Toast(toastLiveExample)
+  var toastTrigger = document.getElementById('liveToastBtn1')
+  var toastLiveExample = document.getElementById('liveToast')
+  if (toastTrigger) {
+    toastTrigger.addEventListener('click', function () {
+      var toast = new bootstrap.Toast(toastLiveExample)
 
-    toast.show()
-  })
-}
+      toast.show()
+    })
+  }
 </script>
 <script>
-    var toastTrigger = document.getElementById('liveToastBtn2')
-    var toastLiveExample = document.getElementById('liveToast')
-    if (toastTrigger) {
-        toastTrigger.addEventListener('click', function () {
-        var toast = new bootstrap.Toast(toastLiveExample)
+  var toastTrigger = document.getElementById('liveToastBtn2')
+  var toastLiveExample = document.getElementById('liveToast')
+  if (toastTrigger) {
+    toastTrigger.addEventListener('click', function () {
+      var toast = new bootstrap.Toast(toastLiveExample)
 
-    toast.show()
-  })
-}
+      toast.show()
+    })
+  }
 </script>
 <script>
-    var toastTrigger = document.getElementById('liveToastBtn3')
-    var toastLiveExample = document.getElementById('liveToast')
-    if (toastTrigger) {
-        toastTrigger.addEventListener('click', function () {
-        var toast = new bootstrap.Toast(toastLiveExample)
+  var toastTrigger = document.getElementById('liveToastBtn3')
+  var toastLiveExample = document.getElementById('liveToast')
+  if (toastTrigger) {
+    toastTrigger.addEventListener('click', function () {
+      var toast = new bootstrap.Toast(toastLiveExample)
 
-    toast.show()
-  })
-}
+      toast.show()
+    })
+  }
 </script>
 <script>
-    var toastTrigger = document.getElementById('liveToastBtn4')
-    var toastLiveExample = document.getElementById('liveToast')
-    if (toastTrigger) {
-        toastTrigger.addEventListener('click', function () {
-        var toast = new bootstrap.Toast(toastLiveExample)
+  var toastTrigger = document.getElementById('liveToastBtn4')
+  var toastLiveExample = document.getElementById('liveToast')
+  if (toastTrigger) {
+    toastTrigger.addEventListener('click', function () {
+      var toast = new bootstrap.Toast(toastLiveExample)
 
-    toast.show()
-  })
-}
+      toast.show()
+    })
+  }
 </script>
 <script>
-    var toastTrigger = document.getElementById('liveToastBtn5')
-    var toastLiveExample = document.getElementById('liveToast')
-    if (toastTrigger) {
-        toastTrigger.addEventListener('click', function () {
-        var toast = new bootstrap.Toast(toastLiveExample)
+  var toastTrigger = document.getElementById('liveToastBtn5')
+  var toastLiveExample = document.getElementById('liveToast')
+  if (toastTrigger) {
+    toastTrigger.addEventListener('click', function () {
+      var toast = new bootstrap.Toast(toastLiveExample)
 
-    toast.show()
-  })
-}
+      toast.show()
+    })
+  }
 </script>
 <script>
-    var toastTrigger = document.getElementById('liveToastBtn6')
-    var toastLiveExample = document.getElementById('liveToast')
-    if (toastTrigger) {
-        toastTrigger.addEventListener('click', function () {
-        var toast = new bootstrap.Toast(toastLiveExample)
+  var toastTrigger = document.getElementById('liveToastBtn6')
+  var toastLiveExample = document.getElementById('liveToast')
+  if (toastTrigger) {
+    toastTrigger.addEventListener('click', function () {
+      var toast = new bootstrap.Toast(toastLiveExample)
 
-    toast.show()
-  })
-}
+      toast.show()
+    })
+  }
 </script>
 <script>
-    var toastTrigger = document.getElementById('liveToastBtn7')
-    var toastLiveExample = document.getElementById('liveToast')
-    if (toastTrigger) {
-        toastTrigger.addEventListener('click', function () {
-        var toast = new bootstrap.Toast(toastLiveExample)
+  var toastTrigger = document.getElementById('liveToastBtn7')
+  var toastLiveExample = document.getElementById('liveToast')
+  if (toastTrigger) {
+    toastTrigger.addEventListener('click', function () {
+      var toast = new bootstrap.Toast(toastLiveExample)
 
-    toast.show()
-  })
-}
+      toast.show()
+    })
+  }
 </script>
 <script>
-    var toastTrigger = document.getElementById('liveToastBtn8')
-    var toastLiveExample = document.getElementById('liveToast')
-    if (toastTrigger) {
-        toastTrigger.addEventListener('click', function () {
-        var toast = new bootstrap.Toast(toastLiveExample)
+  var toastTrigger = document.getElementById('liveToastBtn8')
+  var toastLiveExample = document.getElementById('liveToast')
+  if (toastTrigger) {
+    toastTrigger.addEventListener('click', function () {
+      var toast = new bootstrap.Toast(toastLiveExample)
 
-    toast.show()
-  })
-}
+      toast.show()
+    })
+  }
 </script>
 <script>
-    var toastTrigger = document.getElementById('liveToastBtn9')
-    var toastLiveExample = document.getElementById('liveToast')
-    if (toastTrigger) {
-        toastTrigger.addEventListener('click', function () {
-        var toast = new bootstrap.Toast(toastLiveExample)
+  var toastTrigger = document.getElementById('liveToastBtn9')
+  var toastLiveExample = document.getElementById('liveToast')
+  if (toastTrigger) {
+    toastTrigger.addEventListener('click', function () {
+      var toast = new bootstrap.Toast(toastLiveExample)
 
-    toast.show()
-  })
-}
+      toast.show()
+    })
+  }
 </script>
 
 </html>
