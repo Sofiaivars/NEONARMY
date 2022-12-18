@@ -1,3 +1,5 @@
+@import '../var-style';
+
 .container-index {
     background-image: url(../Assets/Images/background-crear-cuenta.png);
     background-size: cover;
@@ -12,117 +14,144 @@
         top: 1rem;
     }
 
-    .container-index__index-box {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 50%;
-        padding: 40px;
-        transform: translate(-50%, -50%);
-        background: transparent;
-        list-style: none;
+    .container-index__body {
+        display: flex;
+        flex-direction: row;
 
-        h2 {
-            margin: 0 0 30px;
-            padding: 0;
-            color: white;
-            text-align: center;
+        .container-index__index-box {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            width: 40%;
+            padding: 46px;
+            transform: translate(-50%, 30%);
+            background: transparent;
+            list-style: none;
 
-        }
+            h2 {
+                margin: 0 0 30px;
+                padding: 0;
+                color: white;
+                text-align: center;
 
-        form {
-            .inputs {
-                .user-box {
-                    list-style: none;
+            }
 
-                    li {
-                        input {
-                            position: relative;
-                            width: 100%;
-                            padding: 10px 0;
-                            color: #fff;
-                            margin-bottom: 30px;
-                            border: none;
-                            border-bottom: 1px solid white;
-                            outline: none;
-                            background: transparent;
+            form {
+                .inputs {
+                    .user-box {
+                        list-style: none;
 
-                        }
+                        li {
+                            input {
+                                position: relative;
+                                width: 100%;
+                                padding: 10px 0;
+                                color: #fff;
+                                margin-bottom: 30px;
+                                border: none;
+                                border-bottom: 1px solid white;
+                                outline: none;
+                                background: transparent;
 
-                        input:focus~label,
-                        input:valid~label {
-                            top: -5rem;
-                            color: #ff00ee;
-                            font-size: 12px;
-                            transform: translateY(-150%);
-                            font-size: 15px;
-                        }
+                            }
 
-                        label {
-                            position: relative;
-                            top: -8.5vh;
-                            left: 0;
-                            padding: 10px 0;
-                            font-size: 16px;
-                            color: #fff;
-                            pointer-events: none;
-                            transition: .5s;
+                            input:focus~label,
+                            input:valid~label {
+                                top: -5rem;
+                                color: #ff00ee;
+                                font-size: 12px;
+                                transform: translateY(-150%);
+                                font-size: 15px;
+                            }
+
+                            label {
+                                position: relative;
+                                top: -8.5vh;
+                                left: 0;
+                                padding: 10px 0;
+                                font-size: 16px;
+                                color: #fff;
+                                pointer-events: none;
+                                transition: .5s;
 
 
+                            }
                         }
                     }
-                }
 
-                .container-buttons {
-                    height: 7rem;
-                    display: flex;
-                    flex-direction: column;
-
-                    .button-form {
-                        background-color: rgba(149, 0, 159, 0.3);
-                        text-align: center;
-                        padding: 0.8rem 0rem;
-                        color: white;
-                        border-radius: 0.5rem;
-                        cursor: pointer;
+                    .container-buttons {
+                        height: 7rem;
+                        display: flex;
+                        flex-direction: column;
 
                         a {
                             color: #fff;
                             text-decoration: none;
+
+                            .button-form {
+                                background-color: rgba(149, 0, 159, 0.3);
+                                text-align: center;
+                                padding: 0.8rem 0rem;
+                                color: white;
+                                border-radius: 0.5rem;
+                                cursor: pointer;
+
+
+                            }
+
+                            .button-form:hover {
+                                background-color: rgba(149, 0, 159, 0.5);
+                            }
                         }
-                    }
 
-                    .button-form:hover {
-                        background-color: rgba(149, 0, 159, 0.5);
-                    }
-
-                    #Registrate {
-                        color: white;
-                        font-size: 12px;
-                        a {
+                        #Registrate {
                             color: white;
-                            font-weight: bold;
-                            font-size: 13px;
-                            text-decoration: none;
-                            cursor: pointer;
-                        }
-                        a:hover {
-                            color: rgba(165, 165, 165, 0.5);
+                            font-size: 12px;
+
+                            a {
+                                color: white;
+                                font-weight: bold;
+                                font-size: 13px;
+                                text-decoration: none;
+                                cursor: pointer;
+                            }
+
+                            a:hover {
+                                color: rgba(165, 165, 165, 0.5);
+                            }
                         }
                     }
                 }
             }
         }
+
+        .container-index__index-description {
+            width: 17%;
+            position: relative;
+            top: 50%;
+            left: 40%;
+            transform: translate(-19%, 23%);
+            color: map-get($map: $global-color, $key: color-white);
+
+            .description-title {
+                font-weight: bold;
+            }
+
+            .description-body {
+                font-size: medium;
+            }
+        }
     }
+
 }
 
 @media(max-width:525px) {
-    .container-index{
-        .container-index__index-box{
+    .container-index {
+        .container-index__index-box {
             h2 {
                 font-size: medium;
             }
         }
     }
-    
+
 }

@@ -1,4 +1,12 @@
+@import '../mixines';
+@import '../var-style';
+
 .container {
+    h1 {
+        position: relative;
+        left: 5%;
+        color: map-get($map: $global-color, $key: color-white);
+    }
 
     .row-skins {
         position: relative;
@@ -6,13 +14,41 @@
         left: 50%;
         transform: translate(-45%, -50%);
         height: 100%;
-        min-height: 650px;
+        min-height: 580px;
 
         .row__skin-box {
+            .carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        img {
+                            max-width: 500px;
+                        }
+                    }
+                }
+            }
+
             margin: 1rem 0;
             height: 65%;
             border-radius: 1rem;
             background: linear-gradient(to right bottom, rgba(206, 206, 206, 0.7), rgba(224, 224, 224, 0.2));
+
+            .btn-shopping-car1 {
+                position: fixed;
+                top: 65%;
+                left: 0%;
+                width: 42%;
+                color: map-get($map: $global-color, $key: color-white);
+                background: map-get($map: $global-color, $key: color-filter-button);
+            }
+
+            .btn-shopping-car2 {
+                position: fixed;
+                left: 50%;
+                top: 65%;
+                width: 42%;
+                color: map-get($map: $global-color, $key: color-white);
+                background: map-get($map: $global-color, $key: color-filter-button);
+            }
 
             .carousel {
                 .carousel-inner {
@@ -29,5 +65,26 @@
                 }
             }
         }
+    }
+}
+
+.container-global__skin-description{
+ 
+    @include glass-mixin(5px, 100px, 64%);
+    display: flex;
+    padding-bottom: 2%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+
+    .skins-description__text{
+        color: map-get($map: $global-color, $key: color-white);
+        padding: 0px 20px ;
+        position: relative;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        font-size: medium;
     }
 }

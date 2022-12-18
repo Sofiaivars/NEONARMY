@@ -18,6 +18,16 @@
   .container-global .container-global__header {
     display: flex;
     flex-direction: column; }
+    .container-global .container-global__header .contaier-global__header-description {
+      display: flex;
+      direction: row;
+      justify-content: left; }
+      .container-global .container-global__header .contaier-global__header-description h1 {
+        font-size: small;
+        color: #fff;
+        position: relative;
+        top: 50%;
+        transform: translate(0px, 60%); }
     .container-global .container-global__header .container-global__header__nav {
       display: flex;
       justify-content: flex-end;
@@ -242,6 +252,18 @@
         .container-global__body__box .glass-home .carousel .carousel-inner .carousel-item-home .d-block {
           max-width: 500px;
           max-height: 500px; }
+  .container-global__body__box .btn-shopping-car2 {
+    position: absolute;
+    left: 50%;
+    top: 89%;
+    width: 80.2%;
+    transform: translate(-50%, 14%);
+    border-radius: 0 0 10px 10px;
+    color: #fff;
+    background: #300444; }
+  .container-global__body__box .btn-shopping-car2:hover {
+    color: #fff;
+    background: #760157; }
 
 @media (max-width: 980px) {
   .container-global__body__box .glass-home .carousel .carousel-inner .carousel-item-home {
@@ -287,18 +309,39 @@
       max-width: 300px;
       max-height: 300px; } }
 
+.container h1 {
+  position: relative;
+  left: 5%;
+  color: #fff; }
+
 .container .row-skins {
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-45%, -50%);
   height: 100%;
-  min-height: 650px; }
+  min-height: 580px; }
   .container .row-skins .row__skin-box {
     margin: 1rem 0;
     height: 65%;
     border-radius: 1rem;
     background: linear-gradient(to right bottom, rgba(206, 206, 206, 0.7), rgba(224, 224, 224, 0.2)); }
+    .container .row-skins .row__skin-box .carousel .carousel-inner .carousel-item img {
+      max-width: 500px; }
+    .container .row-skins .row__skin-box .btn-shopping-car1 {
+      position: fixed;
+      top: 65%;
+      left: 0%;
+      width: 42%;
+      color: #fff;
+      background: #300444; }
+    .container .row-skins .row__skin-box .btn-shopping-car2 {
+      position: fixed;
+      left: 50%;
+      top: 65%;
+      width: 42%;
+      color: #fff;
+      background: #300444; }
     .container .row-skins .row__skin-box .carousel .carousel-inner .carousel-item .skin-img {
       position: relative;
       top: 50%;
@@ -306,6 +349,29 @@
       transform: translate(-45%);
       max-width: 400px;
       max-height: 400px; }
+
+.container-global__skin-description {
+  background: linear-gradient(to right bottom, rgba(206, 206, 206, 0.7), rgba(224, 224, 224, 0.2));
+  border-radius: 10px;
+  margin-top: 5px;
+  min-height: 100px;
+  overflow: hidden;
+  position: relative;
+  width: 64%;
+  display: flex;
+  padding-bottom: 2%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%); }
+  .container-global__skin-description .skins-description__text {
+    color: #fff;
+    padding: 0px 20px;
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    font-size: medium; }
 
 .container-login {
   background-image: url(../Assets/Images/background-login.png);
@@ -360,16 +426,16 @@
       height: 7rem;
       display: flex;
       flex-direction: column; }
-      .container-login .login-box form .inputs .container-buttons .button-form {
-        background-color: rgba(149, 0, 159, 0.2);
-        text-align: center;
-        padding: 0.8rem 0rem;
-        color: white;
-        border-radius: 0.5rem;
-        cursor: pointer; }
-        .container-login .login-box form .inputs .container-buttons .button-form a {
-          color: #fff;
-          text-decoration: none; }
+      .container-login .login-box form .inputs .container-buttons a {
+        color: #fff;
+        text-decoration: none; }
+        .container-login .login-box form .inputs .container-buttons a .button-form {
+          background-color: rgba(149, 0, 159, 0.2);
+          text-align: center;
+          padding: 0.8rem 0rem;
+          color: white;
+          border-radius: 0.5rem;
+          cursor: pointer; }
       .container-login .login-box form .inputs .container-buttons .button-form:hover {
         background-color: rgba(149, 0, 159, 0.5); }
       .container-login .login-box form .inputs .container-buttons #Registrate {
@@ -395,75 +461,89 @@
     position: absolute;
     left: 2rem;
     top: 1rem; }
-  .container-index .container-index__index-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 50%;
-    padding: 40px;
-    transform: translate(-50%, -50%);
-    background: transparent;
-    list-style: none; }
-    .container-index .container-index__index-box h2 {
-      margin: 0 0 30px;
-      padding: 0;
-      color: white;
-      text-align: center; }
-    .container-index .container-index__index-box form .inputs .user-box {
+  .container-index .container-index__body {
+    display: flex;
+    flex-direction: row; }
+    .container-index .container-index__body .container-index__index-box {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      width: 40%;
+      padding: 46px;
+      transform: translate(-50%, 30%);
+      background: transparent;
       list-style: none; }
-      .container-index .container-index__index-box form .inputs .user-box li input {
-        position: relative;
-        width: 100%;
-        padding: 10px 0;
-        color: #fff;
-        margin-bottom: 30px;
-        border: none;
-        border-bottom: 1px solid white;
-        outline: none;
-        background: transparent; }
-      .container-index .container-index__index-box form .inputs .user-box li input:focus ~ label,
-      .container-index .container-index__index-box form .inputs .user-box li input:valid ~ label {
-        top: -5rem;
-        color: #ff00ee;
-        font-size: 12px;
-        transform: translateY(-150%);
-        font-size: 15px; }
-      .container-index .container-index__index-box form .inputs .user-box li label {
-        position: relative;
-        top: -8.5vh;
-        left: 0;
-        padding: 10px 0;
-        font-size: 16px;
-        color: #fff;
-        pointer-events: none;
-        transition: .5s; }
-    .container-index .container-index__index-box form .inputs .container-buttons {
-      height: 7rem;
-      display: flex;
-      flex-direction: column; }
-      .container-index .container-index__index-box form .inputs .container-buttons .button-form {
-        background-color: rgba(149, 0, 159, 0.3);
-        text-align: center;
-        padding: 0.8rem 0rem;
+      .container-index .container-index__body .container-index__index-box h2 {
+        margin: 0 0 30px;
+        padding: 0;
         color: white;
-        border-radius: 0.5rem;
-        cursor: pointer; }
-        .container-index .container-index__index-box form .inputs .container-buttons .button-form a {
+        text-align: center; }
+      .container-index .container-index__body .container-index__index-box form .inputs .user-box {
+        list-style: none; }
+        .container-index .container-index__body .container-index__index-box form .inputs .user-box li input {
+          position: relative;
+          width: 100%;
+          padding: 10px 0;
+          color: #fff;
+          margin-bottom: 30px;
+          border: none;
+          border-bottom: 1px solid white;
+          outline: none;
+          background: transparent; }
+        .container-index .container-index__body .container-index__index-box form .inputs .user-box li input:focus ~ label,
+        .container-index .container-index__body .container-index__index-box form .inputs .user-box li input:valid ~ label {
+          top: -5rem;
+          color: #ff00ee;
+          font-size: 12px;
+          transform: translateY(-150%);
+          font-size: 15px; }
+        .container-index .container-index__body .container-index__index-box form .inputs .user-box li label {
+          position: relative;
+          top: -8.5vh;
+          left: 0;
+          padding: 10px 0;
+          font-size: 16px;
+          color: #fff;
+          pointer-events: none;
+          transition: .5s; }
+      .container-index .container-index__body .container-index__index-box form .inputs .container-buttons {
+        height: 7rem;
+        display: flex;
+        flex-direction: column; }
+        .container-index .container-index__body .container-index__index-box form .inputs .container-buttons a {
           color: #fff;
           text-decoration: none; }
-      .container-index .container-index__index-box form .inputs .container-buttons .button-form:hover {
-        background-color: rgba(149, 0, 159, 0.5); }
-      .container-index .container-index__index-box form .inputs .container-buttons #Registrate {
-        color: white;
-        font-size: 12px; }
-        .container-index .container-index__index-box form .inputs .container-buttons #Registrate a {
+          .container-index .container-index__body .container-index__index-box form .inputs .container-buttons a .button-form {
+            background-color: rgba(149, 0, 159, 0.3);
+            text-align: center;
+            padding: 0.8rem 0rem;
+            color: white;
+            border-radius: 0.5rem;
+            cursor: pointer; }
+          .container-index .container-index__body .container-index__index-box form .inputs .container-buttons a .button-form:hover {
+            background-color: rgba(149, 0, 159, 0.5); }
+        .container-index .container-index__body .container-index__index-box form .inputs .container-buttons #Registrate {
           color: white;
-          font-weight: bold;
-          font-size: 13px;
-          text-decoration: none;
-          cursor: pointer; }
-        .container-index .container-index__index-box form .inputs .container-buttons #Registrate a:hover {
-          color: rgba(165, 165, 165, 0.5); }
+          font-size: 12px; }
+          .container-index .container-index__body .container-index__index-box form .inputs .container-buttons #Registrate a {
+            color: white;
+            font-weight: bold;
+            font-size: 13px;
+            text-decoration: none;
+            cursor: pointer; }
+          .container-index .container-index__body .container-index__index-box form .inputs .container-buttons #Registrate a:hover {
+            color: rgba(165, 165, 165, 0.5); }
+    .container-index .container-index__body .container-index__index-description {
+      width: 17%;
+      position: relative;
+      top: 50%;
+      left: 40%;
+      transform: translate(-19%, 23%);
+      color: #fff; }
+      .container-index .container-index__body .container-index__index-description .description-title {
+        font-weight: bold; }
+      .container-index .container-index__body .container-index__index-description .description-body {
+        font-size: medium; }
 
 @media (max-width: 525px) {
   .container-index .container-index__index-box h2 {
@@ -476,3 +556,40 @@ body {
   background-image: url(../Assets/Images/404error.jpg);
   background-attachment: fixed;
   background-position: start; }
+
+.container-global__body .container-global__body__box .box-contact {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  position: relative;
+  margin-top: 1rem; }
+  .container-global__body .container-global__body__box .box-contact .form-box {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to right bottom, rgba(206, 206, 206, 0.7), rgba(224, 224, 224, 0.2));
+    border-radius: 0 10px 10px 0; }
+    .container-global__body .container-global__body__box .box-contact .form-box .form-box__image img {
+      width: 100%;
+      height: 100%; }
+    .container-global__body .container-global__body__box .box-contact .form-box .form-box__inputs {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      padding: 5px;
+      justify-content: center;
+      align-items: center; }
+      .container-global__body .container-global__body__box .box-contact .form-box .form-box__inputs h1 {
+        font-family: 'Inter';
+        font-size: large;
+        padding: 5px;
+        color: #fff; }
+      .container-global__body .container-global__body__box .box-contact .form-box .form-box__inputs .inputs {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 5px; }
+        .container-global__body .container-global__body__box .box-contact .form-box .form-box__inputs .inputs label {
+          color: #fff; }
+      .container-global__body .container-global__body__box .box-contact .form-box .form-box__inputs .btn-send {
+        color: #fff;
+        background: #300444; }
