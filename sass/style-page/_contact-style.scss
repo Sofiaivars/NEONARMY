@@ -57,3 +57,16 @@
         }
     }
 }
+
+@media (max-width: 375px) {
+    .container-global__body {
+        .container-global__body__box {
+            .box-contact {
+                .form-box {
+                    flex-direction: column;
+                    border-radius: 0 0 10px 10px;
+                }
+            }
+        }
+    }
+}

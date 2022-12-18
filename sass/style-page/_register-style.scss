@@ -147,62 +147,60 @@
 
 @media(max-width:525px) {
     .container-index {
-        .container-index__index-box {
-            h2 {
-                font-size: medium;
+        .container-index__body {
+            .container-index__index-box {
+                h2 {
+                    font-size: medium;
+                }
             }
         }
     }
-
 }
 
 @media(max-width:375px) {
     .container-index {
-        
-    
         .container-index__body {
             display: flex;
             flex-direction: column;
-    
+
             .container-index__index-box {
                 position: relative;
                 top: 50%;
                 left: 50%;
-                width: 80%;
+                width: 100%;
                 padding: 46px;
-                transform: translate(-50%, -50%);
+                transform: translate(-50%, 24%);
                 background: transparent;
                 list-style: none;
-    
+
                 h2 {
                     margin: 0 0 30px;
                     padding: 0;
                     color: white;
                     text-align: center;
-    
                 }
-    
-                
             }
-    
+
             .container-index__index-description {
-                width: 100%;
+                width: 76%;
                 position: relative;
                 top: 50%;
-                left: 40%;
+                left: 27%;
                 transform: translate(-19%, 23%);
                 color: map-get($map: $global-color, $key: color-white);
-    
+                padding-bottom: 1rem;
+
                 .description-title {
                     font-weight: bold;
+                    font-size: large;
                 }
-    
+
                 .description-body {
-                    font-size: medium;
+                    font-size: small;
                 }
             }
         }
-    
+
     }
 
 }
