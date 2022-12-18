@@ -155,3 +155,54 @@
     }
 
 }
+
+@media(max-width:375px) {
+    .container-index {
+        
+    
+        .container-index__body {
+            display: flex;
+            flex-direction: column;
+    
+            .container-index__index-box {
+                position: relative;
+                top: 50%;
+                left: 50%;
+                width: 80%;
+                padding: 46px;
+                transform: translate(-50%, -50%);
+                background: transparent;
+                list-style: none;
+    
+                h2 {
+                    margin: 0 0 30px;
+                    padding: 0;
+                    color: white;
+                    text-align: center;
+    
+                }
+    
+                
+            }
+    
+            .container-index__index-description {
+                width: 100%;
+                position: relative;
+                top: 50%;
+                left: 40%;
+                transform: translate(-19%, 23%);
+                color: map-get($map: $global-color, $key: color-white);
+    
+                .description-title {
+                    font-weight: bold;
+                }
+    
+                .description-body {
+                    font-size: medium;
+                }
+            }
+        }
+    
+    }
+
+}
