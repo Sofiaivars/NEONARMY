@@ -61,9 +61,11 @@
         color: map-get($map: $global-color, $key: color-white);
         background: map-get($map: $global-color, $key: color-filter-button);
     }
-    .btn-shopping-car2:hover{
+
+    .btn-shopping-car2:hover {
         color: map-get($map: $global-color, $key: color-white);
-        background: map-get($map: $global-color, $key: color-filter-button-hover);;
+        background: map-get($map: $global-color, $key: color-filter-button-hover);
+        ;
     }
 }
 
@@ -176,14 +178,18 @@
 
 }
 
-@media(max-width: 350px) {
+@media(max-width: 375px) {
+    
     .container-global__body__box {
         .glass-home {
+            min-height: 530px;
+            font-size: xx-small;
+
             .carousel {
                 .carousel-inner {
                     .carousel-item-home {
                         position: relative;
-                        left: 0%;
+                        left: 10%;
 
                         .d-block {
                             max-width: 300px;
@@ -196,7 +202,14 @@
 
         }
 
+        .btn-shopping-car2 {
+            position: absolute;
+            top: 106%;
+            width: 81.2%;
+            transform: translate(-50%, 100%);
+            
+        }
     }
-
+    
 
 }

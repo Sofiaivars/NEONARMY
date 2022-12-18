@@ -114,3 +114,35 @@
 
     }
 }
+
+@media(max-width:375px){
+
+
+    .container-login {
+        background-image: url(../Assets/Images/background-login.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        background-attachment: fixed;
+        background-position: center;
+    
+        .login-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            padding: 40px;
+            transform: translate(-50%, -50%);
+            background: transparent;
+            list-style: none;
+    
+            h2 {
+                margin: 0 0 30px;
+                padding: 0;
+                color: white;
+                text-align: center;
+            }
+    
+        }
+    }
+}

@@ -20,7 +20,7 @@
     flex-direction: column; }
     .container-global .container-global__header .contaier-global__header-description {
       display: flex;
-      direction: row;
+      flex-direction: row;
       justify-content: left; }
       .container-global .container-global__header .contaier-global__header-description h1 {
         font-size: small;
@@ -181,6 +181,159 @@
     display: flex;
     justify-content: center; }
 
+@media (max-width: 375px) {
+  .container-global .container-global__header .contaier-global__header-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .container-global .container-global__header .contaier-global__header-description h1 {
+      font-size: small;
+      color: #fff;
+      position: relative;
+      top: 0px;
+      transform: translate(4px, 0); }
+  .container-global .body__buttons {
+    position: fixed;
+    top: 40%;
+    left: 86%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center; }
+  .container-global footer {
+    margin-top: 1rem; } }
+
+.container-index {
+  background-image: url(../Assets/Images/background-crear-cuenta.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../Assets/Images/background-crear-cuenta.png);
+  background-attachment: fixed;
+  background-position: start; }
+  .container-index .container-index__logo {
+    position: absolute;
+    left: 2rem;
+    top: 1rem; }
+  .container-index .container-index__body {
+    display: flex;
+    flex-direction: row; }
+    .container-index .container-index__body .container-index__index-box {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      width: 40%;
+      padding: 46px;
+      transform: translate(-50%, 30%);
+      background: transparent;
+      list-style: none; }
+      .container-index .container-index__body .container-index__index-box h2 {
+        margin: 0 0 30px;
+        padding: 0;
+        color: white;
+        text-align: center; }
+      .container-index .container-index__body .container-index__index-box form .inputs .user-box {
+        list-style: none; }
+        .container-index .container-index__body .container-index__index-box form .inputs .user-box li input {
+          position: relative;
+          width: 100%;
+          padding: 10px 0;
+          color: #fff;
+          margin-bottom: 30px;
+          border: none;
+          border-bottom: 1px solid white;
+          outline: none;
+          background: transparent; }
+        .container-index .container-index__body .container-index__index-box form .inputs .user-box li input:focus ~ label,
+        .container-index .container-index__body .container-index__index-box form .inputs .user-box li input:valid ~ label {
+          top: -5rem;
+          color: #ff00ee;
+          font-size: 12px;
+          transform: translateY(-150%);
+          font-size: 15px; }
+        .container-index .container-index__body .container-index__index-box form .inputs .user-box li label {
+          position: relative;
+          top: -8.5vh;
+          left: 0;
+          padding: 10px 0;
+          font-size: 16px;
+          color: #fff;
+          pointer-events: none;
+          transition: .5s; }
+      .container-index .container-index__body .container-index__index-box form .inputs .container-buttons {
+        height: 7rem;
+        display: flex;
+        flex-direction: column; }
+        .container-index .container-index__body .container-index__index-box form .inputs .container-buttons a {
+          color: #fff;
+          text-decoration: none; }
+          .container-index .container-index__body .container-index__index-box form .inputs .container-buttons a .button-form {
+            background-color: rgba(149, 0, 159, 0.3);
+            text-align: center;
+            padding: 0.8rem 0rem;
+            color: white;
+            border-radius: 0.5rem;
+            cursor: pointer; }
+          .container-index .container-index__body .container-index__index-box form .inputs .container-buttons a .button-form:hover {
+            background-color: rgba(149, 0, 159, 0.5); }
+        .container-index .container-index__body .container-index__index-box form .inputs .container-buttons #Registrate {
+          color: white;
+          font-size: 12px; }
+          .container-index .container-index__body .container-index__index-box form .inputs .container-buttons #Registrate a {
+            color: white;
+            font-weight: bold;
+            font-size: 13px;
+            text-decoration: none;
+            cursor: pointer; }
+          .container-index .container-index__body .container-index__index-box form .inputs .container-buttons #Registrate a:hover {
+            color: rgba(165, 165, 165, 0.5); }
+    .container-index .container-index__body .container-index__index-description {
+      width: 17%;
+      position: relative;
+      top: 50%;
+      left: 40%;
+      transform: translate(-19%, 23%);
+      color: #fff; }
+      .container-index .container-index__body .container-index__index-description .description-title {
+        font-weight: bold; }
+      .container-index .container-index__body .container-index__index-description .description-body {
+        font-size: medium; }
+
+@media (max-width: 525px) {
+  .container-index .container-index__body .container-index__index-box h2 {
+    font-size: medium; } }
+
+@media (max-width: 375px) {
+  .container-index .container-index__body {
+    display: flex;
+    flex-direction: column; }
+    .container-index .container-index__body .container-index__index-box {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      padding: 46px;
+      transform: translate(-50%, 24%);
+      background: transparent;
+      list-style: none; }
+      .container-index .container-index__body .container-index__index-box h2 {
+        margin: 0 0 30px;
+        padding: 0;
+        color: white;
+        text-align: center; }
+    .container-index .container-index__body .container-index__index-description {
+      width: 76%;
+      position: relative;
+      top: 50%;
+      left: 27%;
+      transform: translate(-19%, 23%);
+      color: #fff;
+      padding-bottom: 1rem; }
+      .container-index .container-index__body .container-index__index-description .description-title {
+        font-weight: bold;
+        font-size: large; }
+      .container-index .container-index__body .container-index__index-description .description-body {
+        font-size: small; } }
+
 .glass-guns {
   background: linear-gradient(to right bottom, rgba(206, 206, 206, 0.7), rgba(224, 224, 224, 0.2));
   border-radius: 10px;
@@ -301,13 +454,21 @@
       max-width: 300px;
       max-height: 300px; } }
 
-@media (max-width: 350px) {
-  .container-global__body__box .glass-home .carousel .carousel-inner .carousel-item-home {
-    position: relative;
-    left: 0%; }
-    .container-global__body__box .glass-home .carousel .carousel-inner .carousel-item-home .d-block {
-      max-width: 300px;
-      max-height: 300px; } }
+@media (max-width: 375px) {
+  .container-global__body__box .glass-home {
+    min-height: 530px;
+    font-size: xx-small; }
+    .container-global__body__box .glass-home .carousel .carousel-inner .carousel-item-home {
+      position: relative;
+      left: 10%; }
+      .container-global__body__box .glass-home .carousel .carousel-inner .carousel-item-home .d-block {
+        max-width: 300px;
+        max-height: 300px; }
+  .container-global__body__box .btn-shopping-car2 {
+    position: absolute;
+    top: 106%;
+    width: 81.2%;
+    transform: translate(-50%, 100%); } }
 
 .container h1 {
   position: relative;
@@ -372,6 +533,44 @@
     left: 50%;
     transform: translate(-50%, 20%);
     font-size: medium; }
+
+@media (max-width: 375px) {
+  .container .row-skins {
+    top: 34%;
+    height: 72%;
+    width: 90%;
+    transform: translate(-47%, -50%); }
+    .container .row-skins .row__skin-box .btn-shopping-car1 {
+      position: fixed;
+      top: 63%;
+      left: -0.3%;
+      width: 100%;
+      color: #fff;
+      background: #300444; }
+    .container .row-skins .row__skin-box .btn-shopping-car2 {
+      position: fixed;
+      left: 50%;
+      top: 127%;
+      width: 100%;
+      color: #fff;
+      background: #300444; }
+  .container-global__skin-description {
+    background: linear-gradient(to right bottom, rgba(206, 206, 206, 0.7), rgba(224, 224, 224, 0.2));
+    border-radius: 10px;
+    margin-top: 6%;
+    min-height: 100px;
+    overflow: hidden;
+    position: relative;
+    width: 95%;
+    top: 50%;
+    transform: translate(-50%, 9px); }
+    .container-global__skin-description .skins-description__text {
+      color: #fff;
+      padding: 5px;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 2%);
+      font-size: small; } }
 
 .container-login {
   background-image: url(../Assets/Images/background-login.png);
@@ -450,104 +649,28 @@
         .container-login .login-box form .inputs .container-buttons #Registrate a:hover {
           color: rgba(165, 165, 165, 0.5); }
 
-.container-index {
-  background-image: url(../Assets/Images/background-crear-cuenta.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(../Assets/Images/background-crear-cuenta.png);
-  background-attachment: fixed;
-  background-position: start; }
-  .container-index .container-index__logo {
-    position: absolute;
-    left: 2rem;
-    top: 1rem; }
-  .container-index .container-index__body {
+@media (max-width: 375px) {
+  .container-login {
+    background-image: url(../Assets/Images/background-login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
-    flex-direction: row; }
-    .container-index .container-index__body .container-index__index-box {
-      position: relative;
+    background-attachment: fixed;
+    background-position: center; }
+    .container-login .login-box {
+      position: absolute;
       top: 50%;
       left: 50%;
-      width: 40%;
-      padding: 46px;
-      transform: translate(-50%, 30%);
+      width: 100%;
+      padding: 40px;
+      transform: translate(-50%, -50%);
       background: transparent;
       list-style: none; }
-      .container-index .container-index__body .container-index__index-box h2 {
+      .container-login .login-box h2 {
         margin: 0 0 30px;
         padding: 0;
         color: white;
-        text-align: center; }
-      .container-index .container-index__body .container-index__index-box form .inputs .user-box {
-        list-style: none; }
-        .container-index .container-index__body .container-index__index-box form .inputs .user-box li input {
-          position: relative;
-          width: 100%;
-          padding: 10px 0;
-          color: #fff;
-          margin-bottom: 30px;
-          border: none;
-          border-bottom: 1px solid white;
-          outline: none;
-          background: transparent; }
-        .container-index .container-index__body .container-index__index-box form .inputs .user-box li input:focus ~ label,
-        .container-index .container-index__body .container-index__index-box form .inputs .user-box li input:valid ~ label {
-          top: -5rem;
-          color: #ff00ee;
-          font-size: 12px;
-          transform: translateY(-150%);
-          font-size: 15px; }
-        .container-index .container-index__body .container-index__index-box form .inputs .user-box li label {
-          position: relative;
-          top: -8.5vh;
-          left: 0;
-          padding: 10px 0;
-          font-size: 16px;
-          color: #fff;
-          pointer-events: none;
-          transition: .5s; }
-      .container-index .container-index__body .container-index__index-box form .inputs .container-buttons {
-        height: 7rem;
-        display: flex;
-        flex-direction: column; }
-        .container-index .container-index__body .container-index__index-box form .inputs .container-buttons a {
-          color: #fff;
-          text-decoration: none; }
-          .container-index .container-index__body .container-index__index-box form .inputs .container-buttons a .button-form {
-            background-color: rgba(149, 0, 159, 0.3);
-            text-align: center;
-            padding: 0.8rem 0rem;
-            color: white;
-            border-radius: 0.5rem;
-            cursor: pointer; }
-          .container-index .container-index__body .container-index__index-box form .inputs .container-buttons a .button-form:hover {
-            background-color: rgba(149, 0, 159, 0.5); }
-        .container-index .container-index__body .container-index__index-box form .inputs .container-buttons #Registrate {
-          color: white;
-          font-size: 12px; }
-          .container-index .container-index__body .container-index__index-box form .inputs .container-buttons #Registrate a {
-            color: white;
-            font-weight: bold;
-            font-size: 13px;
-            text-decoration: none;
-            cursor: pointer; }
-          .container-index .container-index__body .container-index__index-box form .inputs .container-buttons #Registrate a:hover {
-            color: rgba(165, 165, 165, 0.5); }
-    .container-index .container-index__body .container-index__index-description {
-      width: 17%;
-      position: relative;
-      top: 50%;
-      left: 40%;
-      transform: translate(-19%, 23%);
-      color: #fff; }
-      .container-index .container-index__body .container-index__index-description .description-title {
-        font-weight: bold; }
-      .container-index .container-index__body .container-index__index-description .description-body {
-        font-size: medium; }
-
-@media (max-width: 525px) {
-  .container-index .container-index__index-box h2 {
-    font-size: medium; } }
+        text-align: center; } }
 
 body {
   background-image: url(../Assets/Images/404error.jpg);
@@ -556,6 +679,15 @@ body {
   background-image: url(../Assets/Images/404error.jpg);
   background-attachment: fixed;
   background-position: start; }
+
+@media (max-width: 375px) {
+  body {
+    background-image: url(../Assets/Images/404error.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../Assets/Images/404error.jpg);
+    background-attachment: fixed;
+    background-position: center; } }
 
 .container-global__body .container-global__body__box .box-contact {
   display: flex;
@@ -593,3 +725,8 @@ body {
       .container-global__body .container-global__body__box .box-contact .form-box .form-box__inputs .btn-send {
         color: #fff;
         background: #300444; }
+
+@media (max-width: 375px) {
+  .container-global__body .container-global__body__box .box-contact .form-box {
+    flex-direction: column;
+    border-radius: 0 0 10px 10px; } }

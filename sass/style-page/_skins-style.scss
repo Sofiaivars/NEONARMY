@@ -68,8 +68,8 @@
     }
 }
 
-.container-global__skin-description{
- 
+.container-global__skin-description {
+
     @include glass-mixin(5px, 100px, 64%);
     display: flex;
     padding-bottom: 2%;
@@ -78,13 +78,62 @@
     left: 50%;
     transform: translate(-50%, -70%);
 
-    .skins-description__text{
+    .skins-description__text {
         color: map-get($map: $global-color, $key: color-white);
-        padding: 0px 20px ;
+        padding: 0px 20px;
         position: relative;
         top: 60%;
         left: 50%;
         transform: translate(-50%, 20%);
         font-size: medium;
     }
+}
+
+
+
+@media (max-width: 375px) {
+    .container {
+        .row-skins {
+            top: 34%;
+            height: 72%;
+            width: 90%;
+            transform: translate(-47%, -50%);
+            .row__skin-box {
+                .btn-shopping-car1 {
+                    position: fixed;
+                    top: 63%;
+                    left: -0.3%;
+                    width: 100%;
+                    color: map-get($map: $global-color, $key: color-white);
+                    background: map-get($map: $global-color, $key: color-filter-button);
+                }
+
+                .btn-shopping-car2 {
+                    position: fixed;
+                    left: 50%;
+                    top: 127%;
+                    width: 100%;
+                    color: map-get($map: $global-color, $key: color-white);
+                    background: map-get($map: $global-color, $key: color-filter-button);
+                }
+            }
+        }
+    }
+
+    .container-global__skin-description {
+
+        @include glass-mixin(6%, 100px, 95%);
+            top: 50%;
+            transform: translate(-50%, 9px);
+
+        .skins-description__text {
+            color: map-get($map: $global-color, $key: color-white);
+            padding: 5px;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 2%);
+            font-size: small;
+        }
+    }
+
 }
