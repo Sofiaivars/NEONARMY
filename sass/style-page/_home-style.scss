@@ -1,11 +1,13 @@
 @import '../mixines';
+@import '../var-style';
+
 .container-global__body__box {
     display: flex;
     justify-content: center;
 
     .glass-home {
         @include glass-mixin(5px, 650px, 80%);
-        
+
 
         .glass__diagonal-text {
             position: absolute;
@@ -47,6 +49,21 @@
 
             }
         }
+    }
+
+    .btn-shopping-car2 {
+        position: absolute;
+        left: 50%;
+        top: 89%;
+        width: 80.2%;
+        transform: translate(-50%, 14%);
+        border-radius: 0 0 10px 10px;
+        color: map-get($map: $global-color, $key: color-white);
+        background: map-get($map: $global-color, $key: color-filter-button);
+    }
+    .btn-shopping-car2:hover{
+        color: map-get($map: $global-color, $key: color-white);
+        background: map-get($map: $global-color, $key: color-filter-button-hover);;
     }
 }
 
@@ -118,8 +135,13 @@
                             max-width: 300px;
                             max-height: 300px;
                         }
+
+
                     }
+
+
                 }
+
             }
 
         }

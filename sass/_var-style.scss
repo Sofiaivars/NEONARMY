@@ -1,6 +1,4 @@
-
-
-$global-color:(
+$global-color: (
     background-primary: linear-gradient(rgb(6, 44, 61), rgb(48, 4, 68)),
     color-white: #fff,
     color-black: #000000,
@@ -10,18 +8,17 @@ $global-color:(
     color-filter-button: rgb(48, 4, 68),
     color-filter-button-hover: rgb(118, 1, 87),
     color-font-section-button: rgb(152, 150, 150),
-     color-section-button: linear-gradient(to right bottom, 
+    color-section-button: linear-gradient(to right bottom,
         rgba(205, 205, 205, 0.7), rgba(130, 130, 130, 0.2)),
-     color-section-button-focus: linear-gradient(to right bottom, 
-         rgba(205, 205, 205, 0.8), rgba(130, 130, 130, 0.4)),
-     color-background-link-footer: rgba(107, 107, 107, 0.5),
-    
-    );
+    color-section-button-focus: linear-gradient(to right bottom,
+        rgba(205, 205, 205, 0.8), rgba(130, 130, 130, 0.4)),
+    color-background-link-footer: rgba(107, 107, 107, 0.5),
+    color-background-glass: linear-gradient(to right bottom, rgba(206, 206, 206, 0.7), rgba(224, 224, 224, 0.2)),
+);
 
-$social-red-color:(
+$social-red-color: (
     twitch: #6441A5,
     whatsapp:#00BB2D,
     twitter:#00ACEE,
     facebook:#3B5998,
-)
-
+    )
