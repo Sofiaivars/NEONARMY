@@ -17,7 +17,7 @@
 
         .contaier-global__header-description {
             display: flex;
-            direction: row;
+            flex-direction: row;
             justify-content: left;
 
             h1 {
@@ -249,5 +249,40 @@
         font-weight: bold;
         display: flex;
         justify-content: center;
+    }
+}
+
+@media(max-width:375px) {
+    .container-global {
+        .container-global__header {
+            .contaier-global__header-description {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h1 {
+                    font-size: small;
+                    color: map-get($map: $global-color, $key: color-white);
+                    position: relative;
+                    top: 0px;
+                    transform: translate(4px, 0);
+                }
+            }
+        }
+
+        .body__buttons {
+            position: fixed;
+            top: 40%;
+            left: 86%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+
+        }
+
+        footer {
+            margin-top: 1rem;
+        }
     }
 }
