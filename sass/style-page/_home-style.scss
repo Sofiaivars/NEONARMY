@@ -54,8 +54,8 @@
     .btn-shopping-car2 {
         position: absolute;
         left: 50%;
-        top: 89%;
-        width: 80.2%;
+        top: 94%;
+        width: 100%;
         transform: translate(-50%, 14%);
         border-radius: 0 0 10px 10px;
         color: map-get($map: $global-color, $key: color-white);
@@ -178,7 +178,7 @@
 
 }
 
-@media(max-width: 375px) {
+@media(min-width:375px) and (max-width:540px) {
     
     .container-global__body__box {
         .glass-home {
@@ -204,9 +204,9 @@
 
         .btn-shopping-car2 {
             position: absolute;
-            top: 106%;
-            width: 81.2%;
-            transform: translate(-50%, 100%);
+            top: 93%;
+            width: 100%;
+            transform: translate(-50%, 0);
             
         }
     }
