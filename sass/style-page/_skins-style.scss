@@ -44,8 +44,9 @@
             .btn-shopping-car2 {
                 position: fixed;
                 left: 50%;
-                top: 65%;
-                width: 42%;
+                top: 64%;
+                transform: translate(-0%,20%);
+                width: 41.8%;
                 color: map-get($map: $global-color, $key: color-white);
                 background: map-get($map: $global-color, $key: color-filter-button);
             }
@@ -91,7 +92,7 @@
 
 
 
-@media (max-width: 375px) {
+@media (min-width:375px) and (max-width:540px) {
     .container {
         .row-skins {
             top: 34%;
@@ -110,8 +111,8 @@
 
                 .btn-shopping-car2 {
                     position: fixed;
-                    left: 50%;
-                    top: 127%;
+                    top: 131%;
+                    left: 0%;
                     width: 100%;
                     color: map-get($map: $global-color, $key: color-white);
                     background: map-get($map: $global-color, $key: color-filter-button);

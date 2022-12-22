@@ -252,7 +252,7 @@
     }
 }
 
-@media(max-width:375px) {
+@media (min-width:375px) and (max-width:540px) {
     .container-global {
         .container-global__header {
             .contaier-global__header-description {
@@ -282,7 +282,7 @@
         }
 
         footer {
-            margin-top: 1rem;
+            margin-top: 2rem;
         }
     }
 }
