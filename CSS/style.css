@@ -302,7 +302,7 @@
   .container-index .container-index__body .container-index__index-box h2 {
     font-size: medium; } }
 
-@media (max-width: 375px) and (max-width: 920px) {
+@media (min-width: 375px) and (max-width: 920px) {
   .container-index .container-index__body {
     display: flex;
     flex-direction: column; }
