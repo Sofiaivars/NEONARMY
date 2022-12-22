@@ -681,12 +681,12 @@ body {
   background-attachment: fixed;
   background-position: start; }
 
-@media (max-width: 375px) {
+@media (max-width: 940px) and (min-width: 375px) {
   body {
-    background-image: url(../Assets/Images/404error.jpg);
+    background-image: url(../Assets/Images/vertical-404.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../Assets/Images/404error.jpg);
+    background-image: url(../Assets/Images/vertical-404.jpg);
     background-attachment: fixed;
     background-position: center; } }
 
