@@ -36,7 +36,7 @@
     }
 }
 
-@media(max-width:500px) {
+@media(min-width:375px) and (max-width:930px) {
     .glass-guns {
         .glass__guns-text {
             font-size: 15vh;
